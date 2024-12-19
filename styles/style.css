@@ -70,18 +70,18 @@ header nav a:nth-child(2){
 }
 
 /*------------------------------------ Hero section ------------------------------------*/
-.container-div{
+.container{
     width: screen;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
 }
-.rows{
-    width: 90vw;
+.row{
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
 }
 .col1{
@@ -126,31 +126,51 @@ header nav a:nth-child(2){
     background-color: #fff;
     width: 90vw;
     /* height: 90vh; */
+
     border-radius: 20px;
     margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.col-three{
+.col3{
     display: flex;
     align-items: start;
     flex-direction: column;
 }
-.col-three span{
+.col3 span a{
     width: 35vw;
+    height: 100px;
     border: 1px solid var(--main-color);
     border-radius: 20px;
     margin-top: 15px;
-    padding: 10px;
+    /* padding: 10px; */
     box-shadow: 1px 0.5px #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.col-three span:hover{
+.span-text-div{
+    width: 80%;
+}
+.col3 span a:hover{
     border: none;
     background-color: #008000;
     color: #fff;
     cursor: pointer;
 }
-.col-three span:hover a{
+.col3 span a:hover{
     color: #fff;
+}
+.col3 span .icon-div.div{
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+.col3 span:hover .icon-div.div{
+    background-color: #fff;
 }
 
 
@@ -171,7 +191,7 @@ header nav a:nth-child(2){
     background-color: rgb(74, 12, 124,0.5);
     border-radius: 20px;
 }
-.referral-div .rows{
+.referral-div .row{
     /* width: 75vw; */
     justify-content: space-around;
 }
@@ -185,7 +205,7 @@ header nav a:nth-child(2){
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 70vh;
+    /* height: 70vh; */
 }
 .board-div{
     display: flex;
@@ -206,8 +226,8 @@ header nav a:nth-child(2){
 .board-div .board-span-div{
     background-color: var(--main-color);
     width: 300px;
-    height: 100px;
-    margin-top: 10px;
+    /* height: 200px; */
+    margin: 10px;
     padding: 20px;
     border-radius: 10px;
 
@@ -223,7 +243,7 @@ header nav a:nth-child(2){
     justify-content: center;
     padding: 30px;
 }
-.rows.row2{
+.row.row2{
     justify-content: space-around;
 }
 .small-div{
@@ -249,8 +269,14 @@ header nav a:nth-child(2){
 }
 footer{
     width: 100vw;
-    height: 250px;
+    height: 300px;
     background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer{
+    width: 90vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -291,15 +317,16 @@ footer{
 
 .line{
     width: 80%;
-    height: 2px;
+    height: 3px;
+    margin-bottom: 30px;
     background-color: #fff;
 }
 
-@media only screen and (max-width:425px) {
+@media screen and (max-width: 425px) {
     header nav{
         display: none;
     }
-    .rows{
+    .row{
         flex-wrap: wrap;
         justify-content: center;
         /* width: 100%; */
@@ -320,3 +347,11 @@ footer{
         width: 90%;
     }
 }
+
+
+
+/* ----------------------------------------------- welcome page --------------------------------------------- */
+/* .row.row3{
+    flex-direction: column;
+    align-items: start;
+} */
