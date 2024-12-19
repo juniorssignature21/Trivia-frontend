@@ -348,6 +348,11 @@ footer{
         width: 90%;
     }
 }
+.img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -400,6 +405,14 @@ form{
     background-color: #008000;
     cursor: pointer;
 }
+.menu-icon{
+    display: none;
+    width: 80px;
+}
+.img-div img{
+    width: 30px;
+    height: 30px;
+}
 @media screen and (max-width:768px) {
     .name-input-div{
         flex-wrap: wrap;
@@ -424,5 +437,8 @@ form{
     }
     .footer-div p{
         font-size: 5px;
+    }
+    .menu-icon{
+        display: flex;
     }
 }
