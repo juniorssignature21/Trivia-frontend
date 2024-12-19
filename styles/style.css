@@ -150,6 +150,7 @@ header nav a:nth-child(2){
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: 1.5s;
 }
 .span-text-div{
     width: 80%;
@@ -298,7 +299,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20vw;
+    width: 25vw;
 }
 .icon-div{
     background-color: #008000;
@@ -322,7 +323,7 @@ footer{
     background-color: #fff;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     header nav{
         display: none;
     }
@@ -350,8 +351,78 @@ footer{
 
 
 
-/* ----------------------------------------------- welcome page --------------------------------------------- */
-/* .row.row3{
+/* ----------------------------------------------- signup page --------------------------------------------- */
+.form-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
-    align-items: start;
-} */
+    /* height: 45vh; */
+}
+.form-div h1{
+    font-size: 40px;
+}
+form{
+    width: 40vw;
+}
+.name-input-div{
+    display: flex;
+    justify-content: space-between;
+}
+.name-input-div input{
+    width: 300px;
+    height: 55px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+}
+.email-input-div input{
+    width: 100%;
+    height: 55px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+}
+.register-btn{
+    border:none;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #008000;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .name-input-div{
+        flex-wrap: wrap;
+    }
+    .name-input-div input{
+        width: 80vw;
+    }
+    form{
+        width: 80vw;
+    }
+    .col2{
+        margin-top: 10px;
+    }
+    .socials{
+        flex-wrap: wrap;
+    }
+    .icon-div{
+        margin: 1px;
+    }
+    .footer-div a{
+        font-size: 8px;
+    }
+    .footer-div p{
+        font-size: 5px;
+    }
+}
