@@ -47,11 +47,11 @@ header nav a{
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100px;
     height: 30px;
     border: 1px solid red;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 25px;
     font-size: 12px;
 
@@ -140,11 +140,12 @@ header nav a:nth-child(2){
     flex-direction: column;
 }
 .col3 span a{
-    width: 35vw;
+    width: 500px;
     height: 100px;
     border: 1px solid var(--main-color);
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* padding: 10px; */
     box-shadow: 1px 0.5px #000;
     display: flex;
@@ -247,6 +248,9 @@ header nav a:nth-child(2){
 .row.row2{
     justify-content: space-around;
 }
+.row2 .col2 img{
+    width: 200px;
+}
 .small-div{
     width: 45vw;
     height: 100px;
@@ -330,7 +334,6 @@ footer{
     .row{
         flex-wrap: wrap;
         justify-content: center;
-        /* width: 100%; */
     }
     .col1{
         width: 95vw;
@@ -347,7 +350,99 @@ footer{
     .col2 img{
         width: 90%;
     }
+    .col3{
+        /* width: 80vw; */
+        justify-content: center;
+    }
+    .col3 span a{
+        width: 100%;
+    }
+    .board-div{
+        width: 300px;
+    }
+    .board-div .board-span-div{
+        background: none;
+        color: #000;
+    }
+    .row-div{
+        margin-top: 10px;
+        background-color: var(--main-color);
+    }
+    .row2 .col1{
+        padding: 20px;
+    }
+    .row2 .col1 h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .row2 .col1 small{
+        font-size: 20px;
+    }
+    .row2 .col1 .btn{
+        margin-top: 10px;
+        background-color: #008000;
+        height: 100px;
+    }
+    .small-div{
+        width: 80vw;
+        /* height: 400px; */
+        background: none;
+    }
+    .referral-div{
+        background: none;
+    }
+    .referral-div h1{
+        color: #000;
+    }
+    .col1 .col-div{
+        width: 600px;
+        background-color: var(--main-color);
+    }
+    .row4 .col1 h1{
+        font-size: 35px;
+        color: #000;
+        text-align: center;
+
+    }
 }
+@media screen and (max-width:425px) {
+    .col1 .col-div{
+        width: 340px;
+    }
+    .referral-div .col2 img{
+        display: none;
+    }
+    .col1 .btn-div a:first-child{
+        background-color: #008000;
+    }
+}
+@media screen and (max-width: 375px){
+    .col1 .col-div{
+        width: 320px;
+    }
+    .row4 .col1 h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .referral-div  h1{
+        font-size: 20px;
+        /* text-align: center; */
+    }
+    .col1 .col-div{
+        width: 260px;
+    }
+    .referral-div .col2 img{
+        display: none;
+    }
+    .row .col-text h1{
+        font-size: 35px;
+    }
+    .board-div{
+        width: 250px;
+    }
+}
+
 .img-div{
     display: flex;
     align-items: center;
@@ -375,7 +470,7 @@ form{
     justify-content: space-between;
 }
 .name-input-div input{
-    width: 300px;
+    width: 250px;
     height: 55px;
     padding: 8px;
     border-radius: 10px;
@@ -413,6 +508,9 @@ form{
     width: 30px;
     height: 30px;
 }
+.container{
+    transition: 1.5s;
+}
 @media screen and (max-width:768px) {
     .name-input-div{
         flex-wrap: wrap;
@@ -441,4 +539,64 @@ form{
     .menu-icon{
         display: flex;
     }
+    .menu-icon img{
+        width: 40px;
+    }
+    .row3 .col1{
+        display: none;
+    }
+    
+}
+.row3 .col1{
+    width: 25vw;
+    margin-bottom: 20px;
+}
+.row3 .col1 h1{
+    text-align: center;
+    line-height: 40px;
+}
+@media screen and (max-width:375px) {
+    .col3 .span-text-div h1{
+        font-size: 15px;
+    }
+    .col3 .span-text-div p{
+        font-size: 10px;
+    }
+}
+.most-ref-div{
+    width: 90vw;
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.most-ref-div .ref-person img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.most-ref-div .ref-person{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid #a3a1a1d3;
+    margin: 10px 0;
+}
+.most-ref-div .ref-person p{
+    width: 20%;
+}
+.most-ref-div .ref-person:first-child{
+    background-color: var(--main-color);
+    color: #fff;
+
+}
+.most-ref-div .ref-person:nth-child(2){
+    background-color: var(--recent-color);
+    color: #fff;
+
 }
